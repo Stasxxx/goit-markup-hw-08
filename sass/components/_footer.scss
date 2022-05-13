@@ -5,8 +5,8 @@
 }
 
 .footer-cont {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
 }
 
 .footer-address {
@@ -27,7 +27,6 @@
 
 .footer-item {
     margin-top: 9px;
-
     &:first-child {
         margin-top: 0;
     }

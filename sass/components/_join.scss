@@ -1,5 +1,6 @@
 .join {
-    margin-left: 70px;
+    // margin-left: 70px;
+    margin-top: 60px;
 }
 
 .join-titel {
@@ -8,7 +9,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    text-align: center;
     color: #FFFFFF;
 
     margin-bottom: 20px;
@@ -16,6 +17,7 @@
 
 .join-list {
     display: flex;
+    justify-content: center;
 }
 
 .join-item:not(:last-child) {

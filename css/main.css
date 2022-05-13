@@ -688,15 +688,6 @@ img {
   padding-bottom: 60px;
 }
 
-.footer-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .footer-address {
   font-style: normal;
 }
@@ -725,7 +716,7 @@ img {
 }
 
 .join {
-  margin-left: 70px;
+  margin-top: 60px;
 }
 
 .join-titel {
@@ -734,6 +725,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: #FFFFFF;
   margin-bottom: 20px;
 }
@@ -742,6 +734,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .join-item:not(:last-child) {
@@ -774,7 +769,7 @@ img {
 }
 
 .subscribe {
-  margin-left: 93px;
+  margin-top: 60px;
 }
 
 .subscrybe-title {
