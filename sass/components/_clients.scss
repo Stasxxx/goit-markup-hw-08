@@ -1,6 +1,8 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .clients-title {
@@ -9,27 +11,76 @@
 
 .clients-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include desktop {
+        flex-wrap: nowrap;
+        
+    }
 }
 
 .clients-link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
         border: 1px solid var(--accent-color);
     }
+    @include tablet {
+        width: 226px;
+        height: 92px;
+    }
+    @include desktop {
+        width: 170px;
+        height: 92px;
+    }
+}
+
+.clients-item {
+    // margin: 0 auto 30px auto;
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    @include mobile {
+        margin-right: 30px;
+        &:nth-child(even) {
+        margin-right: 0;
+        }
+        &:nth-child(n+5) {
+            margin-bottom: 0;
+        }
+    }
+       
+    @include tablet {
+        &:nth-child(even) {
+            margin-right: 30px;
+        }
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        &:nth-child(n+4) {
+            margin-bottom: 0;
+        }
+    }
+    @include desktop {
+        margin-bottom: 0;
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+    }
 }
 
 .clients-item:not(:last-child) {
-    margin-right: 30px;
+        // margin-right: 30px;
 }
 
 .client-icon {
