@@ -1,19 +1,20 @@
 .join {
-    // margin-left: 70px;
     margin-top: 60px;
+    @include desktop {
+            margin-left: 70px;
+        }
 }
 
-.join-titel {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #FFFFFF;
-
-    margin-bottom: 20px;
-}
+// .join-titel {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     text-align: center;
+//     color: #FFFFFF;
+//     margin-bottom: 20px;
+// }
 
 .join-list {
     display: flex;
