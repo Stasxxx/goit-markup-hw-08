@@ -116,7 +116,25 @@
                         <a href="" class="project-link link">
                             <div>
                                 <div class="project-action">
-                                    <img class="project-img" src="./images/techno.jpg" alt="Technocrack">
+                                    <picture>
+                                        <source srcset="
+                                            ./images/techno.jpg 1x,
+                                            ./images/techno-2x.jpg 2x
+                                            " 
+                                            media="(min-width: 1200px)">
+                                        <source srcset="
+                                            ./images/techno-tablet.jpg 1x,
+                                            ./images/techno-tablet-2x.jpg 2x
+                                            " 
+                                            media="(min-width: 768px)">
+                                        <source srcset="
+                                            ./images/techno-mobile.jpg 1x,
+                                            ./images/techno-mobile-2x.jpg 2x
+                                            " 
+                                            media="(min-width: 320px)">
+                                        <img class="project-img" src="./images/techno.jpg" alt="Technocrack">
+                                    </picture>
+                                    
                                     <p class="project-discription">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                         это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
