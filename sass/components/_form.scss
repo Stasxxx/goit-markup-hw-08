@@ -7,7 +7,7 @@
 }
 
 .user-input {
-    width: 448px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -32,7 +32,7 @@
 }
 
 .user-feedback {
-    min-width: 448px;
+    width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -56,12 +56,21 @@
 }
 
 .user-agreement {
-    font-size: 14px;
-    line-height: 1.71px;
+    font-size: 10px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    @media screen and (min-width: 338px) {
+        font-size: 12px;
+    }
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.71px;
+        flex-wrap: nowrap;
+    }
 }
 
 .icon-checkbox {
@@ -75,10 +84,13 @@
     border: 3px solid var(--primary-color);
     border-radius: 2px;
     margin-right: 8px;
-    margin-left: 14px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    @include desktop {
+        margin-left: 14px;
+        }
 }
 
 .checkbox {
@@ -96,6 +108,32 @@
     &:checked+.user-agreement .icon-checkbox {
             fill: #fff;
         }
+}
+
+.user-title {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--secondary-color);
+    margin-bottom: 4px;
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-agreemant {
+    color: #2196F3;
+    padding-left: 4px;
+}
+
+.form-checkbox {
+    margin-bottom: 30px;
 }
 
 .submit {
@@ -123,30 +161,4 @@
         background: #188CE8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
-}
-
-.user-title {
-    display: block;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: var(--secondary-color);
-    margin-bottom: 4px;
-}
-
-.form-icon {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-agreemant {
-    color: #2196F3;
-    padding: 4px;
-}
-
-.form-checkbox {
-    margin-bottom: 30px;
 }

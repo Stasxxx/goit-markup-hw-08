@@ -173,8 +173,11 @@
     height: 100vh;
     width: 100vw;
     z-index: 2;
+    padding: 22px 20px;
+    overflow: auto;
+    @include mobile {
     padding: 48px 40px;
-    
+    }
 }
 
 .cont {
@@ -239,9 +242,11 @@
 .mob-soc {
     display: flex;
     margin-top: 64px;
+    max-width: 100%;
 }
 
 .mob-soc_item:not(:last-child) {
+    margin-right: 10px;
     @include mobile {
     margin-right: 30px;
     }
@@ -250,8 +255,11 @@
 .mob-soc_link {
     display: block;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    @include mobile {
+        font-size: 18px;
+    }
 }

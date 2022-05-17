@@ -12,8 +12,9 @@
 }
 
 .modal {
-    width: 528px;
-    min-height: 581px;
+    
+    width: 100%;
+    max-height: 100%;
     background-color: #fff;
     border-radius: 4px;
     position: absolute;
@@ -21,10 +22,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
-
+    overflow: auto;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+        @include mobile {
+            width: 450px;  
+        }
+        @include desktop {
+            width: 528px;
+            height: 581px;
+        }
+
+
 }
 
 .modal-close {
@@ -68,9 +78,10 @@
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-color);
     margin-bottom: 12px;
+
 }
