@@ -24,6 +24,9 @@
 .team-item {
     background: #FFFFFF;
     margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
     
     @include tablet {
         margin-right: 30px;

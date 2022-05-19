@@ -1,6 +1,6 @@
 .features {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .features-list {
@@ -17,10 +17,17 @@
 .features-list__item {
     margin-left: auto;
     margin-right: auto;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
     @include tablet {
         margin-right: 30px;
         width: 354px;
         margin-left: 0;
+        &:nth-child(3) {
+                margin-bottom: 0;
+            }
 
         &:nth-child(2n) {
             @media screen and(min-width: 768px) and (max-width: 1199px) {
@@ -32,7 +39,11 @@
         max-width: 270px;
         &:last-child {
             margin-right: 0;
-        }          
+        } 
+        &:nth-child(n+1) {
+            margin-bottom: 0;
+        }
+        width: 270px;
     }    
  }
 

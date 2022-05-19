@@ -2,12 +2,13 @@
     // margin-left: 93px;
     margin-top: 60px;
     @include tablet {
-        margin-left: 166px;
-        margin-right: 152px;
+        // margin-left: 166px;
+        // margin-right: 152px;
     }
     @include desktop {
         margin-left: 93px;
         margin-right: 0;
+        margin-top: 0;
     }
 }
 
@@ -28,7 +29,6 @@
 }
 
 .subscrybe-input {
-    // width: 358px;
     width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -39,7 +39,7 @@
     color: #fff;
     padding-left: 16px;
     margin-bottom: 20px;
-    // margin-right: 12px;
+    margin-right: auto;
 
     &::placeholder {
         font-size: 16px;
@@ -54,31 +54,47 @@
     @include desktop {
         width: 358px;
         margin-right: 12px;
+        margin-bottom: 0;
     }
 }
 
+.subscribe-cont {
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+        flex-direction: inherit;
+        flex-wrap: wrap;
+    }
+}
 .subscribe-submit {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    // left: 50%;
+    // transform: translateX(-50%);
     
-    width: 200px;
-    height: 50px;
+    // width: 200px;
+    // height: 50px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88px;
+    line-height: 1.88;
     text-align: left;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    padding-left: 29px;
-    
+    padding: 10px 62px 10px 29px;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
 
     background: var(--accent-color);
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    // @include tablet {
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
     @include desktop {
             left: 0px;
             transform: translateX(0%);

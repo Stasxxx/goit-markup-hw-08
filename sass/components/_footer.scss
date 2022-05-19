@@ -9,17 +9,19 @@
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
+        justify-content:space-around;
     }
     @include desktop {
         flex-wrap: nowrap;
+        justify-content:center;
     }
     // align-items: baseline;
 }
 
 .footer-address {
     @include tablet {
-        margin-left: 76px;
-        margin-right: 165px;
+        // margin-left: 76px;
+        // margin-right: 165px;
     }
     @include desktop {
         margin-left: 0;
